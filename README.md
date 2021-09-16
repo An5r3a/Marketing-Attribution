@@ -2,7 +2,7 @@
 Marketing attribution is a way of measuring the value of the campaigns and channels that are reaching your potential customers. The point in time when a customer interacts with a channel is called a touchpoint, and a collection of touch points forms a user journey. Users journeys can be long with many touch points that makes it difficult to understand the true high and low impact of each interaction, which can result in an inaccurate division of credit and a false representation of marketing performance.
 To overcome this problem, we introduce an attention mechanism for marketing attribution to relate different positions of a sequence of touch points to find out who they should pay more attention to.
 
-# Limitation of traditional models
+## Limitation of traditional models
 
 All attribution models have their pros and cons. Usually, we have to decide up front how we want to credit each touchpoint that resulted in a conversion. For example, linear model credits an equal share to the value between all touch points, time-decay model credits a decreasing percentage of value the further away in time a touchpoint is from the conversion, positional model credits 40% to the first and last touch points and the remaining 20% is evenly distributed to the touch points in between.
 Luckily, we propose a deep learning model that is able to understand the interaction among all touch points in a user journey and calculates specific credits to each touchpoint depending on the impact each interaction has. The results of this model provide marketers with deeper insights into the importance of campaigns and channels, driving better marketing efficiency.
@@ -31,7 +31,7 @@ Now, let’s see a more specific example for a user with 12 touch points.
 ![image](https://user-images.githubusercontent.com/35504627/133578887-46455982-32b1-4790-b081-05be48558e95.png)
 
 
-# Conclusion
+## Conclusion
 
 The self-attention model is able to find a better representative trend of interactions between the 12 touch points. Self-attention mechanism is a successful method that helps us make our attribution model interpretable and explain why it does what it does.
 By leveraging a self-attention attribution model, we have eliminated the biases associated with traditional attribution mechanisms. We are able to divide credits by its relative importance in the user journey and have an accurate representation of marketing performance. Now that we have solid and trusted data behind attribution, we’re confident in using the results to inform and drive our marketing mix strategy and investment decisions.
